@@ -1,0 +1,35 @@
+name: 'Publish application'
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+        # Checkout the code
+        - uses: actions/checkout@v2
+
+        # Install .NET Core SDK
+        - name: Setup .NET Core
+          uses: actions/setup-dotnet@v1
+          with:
+            dotnet-version: 3.1.x
+
+        # Generate the website
+        - name: Publish
+          run: dotnet publish Guzzard69.github.io/Guzzard69.github.io.csproj -c Release -o release
+
+        # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
+        - name: Add .nojekyll file
+          run: touch release/wwwroot/.nojekyll
+
+        # Publish the website
+        - name: GitHub Pages action
+          if: ${{ github.ref == 'refs/heads/master' }} # Publish only when the push is on master
+          uses: peaceiris/actions-gh-pages@v3.6.1
+          with:
+            github_token: ${{ secrets.PUBLISH_TOKEN }}
+            publish_branch: gh-pages
+            publish_dir: /release/wwwroot
+            allow_empty_commit: false
+            keep_files: false
+            force_orphan: true
