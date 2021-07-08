@@ -18,7 +18,7 @@ jobs:
         - name: Publish
           run: dotnet publish Guzzard69.github.io/Guzzard69.github.io.csproj -c Release -o release
 
-        # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project.
+        # add .nojekyll file
         - name: Add .nojekyll file
           run: touch release/wwwroot/.nojekyll
 
