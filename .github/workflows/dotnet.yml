@@ -18,13 +18,18 @@ jobs:
         - name: Publish
           run: dotnet publish Guzzard69.github.io/Guzzard69.github.io.csproj -c Release -o release
 
-        # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
+        # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project.
         - name: Add .nojekyll file
           run: touch release/wwwroot/.nojekyll
 
         # Publish the website
-        - name: Commit wwwroot to GitHub Pages
-          uses: JamesIves/github-pages-deploy-action@3.7.1
+        - name: GitHub Pages action
+          if: ${{ github.ref == 'refs/heads/master' }}
+          uses: peaceiris/actions-gh-pages@v3.6.1
           with:
-            BRANCH: gh-pages
-            FOLDER: release/wwwroot
+            github_token: ${{ secrets.PUBLISH_TOKEN }}
+            publish_branch: gh-pages
+            publish_dir: /release/wwwroot
+            allow_empty_commit: false
+            keep_files: false
+            force_orphan: true
