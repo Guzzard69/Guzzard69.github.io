@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-16">
+    <title>Kyle's Website</title>
+    <link rel="stylesheet" href="./stylesheets/main.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand pl-4" href="#"><h3>Kyle's Website</h3></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link pr-4" href="/resume" target="_blank">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pr-4" href="https://bitbucket.org/kyle_hansen/">Bitbucket</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pr-4" href="https://github.com/Guzzard69">Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pr-4" href="#pokemon-section">Pokemon</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Parallax Section-->
+    <section>
+        <div class="text-center hero-section">
+            <div class="center-text">
+                <h1 class="display-3">Kyle's Website</h1>
+                <p id="animation-text">I'm an aspiring web developer currently enrolled in the University of Michigan's College of Engineering</p>
+            </div>
+        </div>
+    </section>
+
+    <!--About me-->
+    <section id="about-me" class="about-me">
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1>About Me</h1>
+                    <p class="text">My name is Kyle Hansen and I have been coding since around July 2020. I learned to code with C# and now use ASP.NET Core to create web applications. I have about 8 months of team-based experience creating custom business-scale solutions for small companies using ASP.NET Core and SQL Server.</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="card col-12 mt-5">
+                    <div class="row">
+                        <div class="col-md-12 mb-3 mt-3">
+                            <h3>Contact Me</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form action="/" method="post">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <input type="text" name="emailAddress" placeholder="Your Email Address" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <input type="text" name="name" placeholder="Your Name or the Name of Your Organization" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" placeholder="Your Message" class="form-control" rows="4"></textarea>
+                                </div>
+                                <input type="submit" class="btn btn-secondary mb-3" value="Submit" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+
+    <!--Favorite Technologies-->
+    <section class="favorite-technologies">
+        <div class="favorite-technologies-text">
+            <h2 class="text-center pt-3 pb-3">Favorite Technologies</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div>
+                            <h5><a class="text-white" href="https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-5.0">ASP.NET Core MVC</a></h5>
+                            <p class="text">This is my tool of choice when it comes to building a secure, well-organized, and convenient codebase to build out a new website.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <h5><a class="text-white" href="https://nodejs.org/en/">Node.js</a></h5>
+                            <p class="text">I used Node.js to learn the basics of web development and I appreciate its use of back-end javascript to make building front-ends and back-ends more congruent.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <h5><a class="text-white" href="https://github.com/">Git/Github</a></h5>
+                            <p class="text">Although I mostly use Github as a convenient way to push changes to websites hosted on Azure and Heroku, it also allows for easy teamwork during school projects. I also occasionally use Bitbucket.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+
+    <!--Recent Work-->
+    <section class="recent-work mt-5 mb-5">
+        <h2 class="text-center pt-3 pb-3">Personal Projects:</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card p-2" style="height:100%;">
+                        <h5>Star Wars Web Scraping</h5>
+                        <p class="text">I used C# and Selenium to automate character information collecting from <a href="https://starwars.fandom.com/wiki/Main_Page">Wookieepedia</a>. This project also makes use of C#'s multithreading capabilities to run multiple browsers at once and uses SQL Server for data storage.</p>
+                        <p><a href="https://github.com/Guzzard69/StarWarsWebScraping">Code</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card p-2" style="height:100%;">
+                        <h5>Blazor Games</h5>
+                        <p class="text">This website includes a simple recreation of Tic-Tac-Toe and Minesweeper using Blazor WebAssembly hosted on Github Pages. The Tic-Tac-Toe features local multiplayer and a simple AI while the Minesweeper allows for custom parameters for board size and number of mines.</p>
+                        <p><a href="https://guzzard69.github.io/Games/">Project</a> | <a href="https://github.com/Guzzard69/Games">Code</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card p-2" style="height:100%;">
+                        <h5><a class="text-dark">Youtube 2x Speed Script</a></h5>
+                        <p class="text">This is a Tampermonkey script using vanilla Javascript that will automatically set Youtube videos to 2x speed when opening them in a web browser.</p>
+                        <p><a href="https://github.com/Guzzard69/youtube-2x-speed-script">Code</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+
+    <!--Pokemon Section-->
+    <section class="pokemon-section" id="pokemon-section">
+        <div class="container">
+            <div class="col-md-12 justify-content-center">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto text-center">
+                        <h2>Pokemon Guessing</h2>
+                        <p class="text">This is a very small project using Vanilla Javascript XML HTTP requests to access data from <a href="https://pokeapi.co/">PokéAPI</a>.</p>
+                        <img id="pokemonImg" src="" alt="image of a randomly chosen pokemon">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 mx-auto justify-content-center">
+                        <div class="row">
+                            <div class="col-md-12 text-center mb-3">
+                                <input name="pokemon_answer" id="pokemonBox" class="pokemon-element form-control" placeholder="Enter the Pokemon's Name" value="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 text-center mb-3">
+                                <button class="btn btn-secondary pokemon-element" id="pokemonButton">New Pokemon</button>
+                            </div>
+                            <div class="col-md-6 text-center mb-3">
+                                <button type="submit" class="btn btn-secondary pokemon-element" id="anotherButton">Submit</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 text-center mb-3">
+                                <div id="score" class="pokemon-element">Score: 0</div>
+                            </div>
+                            <div class="col-md-4 text-center mb-3">
+                                <div id="response" class="pokemon-element"></div>
+                            </div>
+                            <div class="col-md-4 text-center mb-3">
+                                <div id="totalPokemon" class="pokemon-element">Pokemon: 1</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center" style="height:64px;">
+                                <img id="loading" src="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <footer class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-3">
+            <p><a href="https://images.nasa.gov/details-as11-44-6551" target="_blank">Parallax Photo</a> from <a href="https://www.nasa.gov/multimedia/imagegallery/index.html" target="_blank">NASA Image Gallery</a></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
