@@ -1,8 +1,8 @@
 .hero-section {
-    background-image: url(https://www.gstatic.com/earth/social/00_generic_facebook-001.jpg);
+    background-color: black;
     color: white;
-    padding-top: 50px;
-    height: 300px;
+    padding-top: 12%;
+    height: 550px;
 }
 
 .top-heading {
@@ -19,7 +19,6 @@
 
 .favorite-technologies {
     background-color: black;
-    /*background-image: url(https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000394/GSFC_20171208_Archive_e000394~small.jpg);*/
     color: white;
 }
 
@@ -61,21 +60,10 @@ hr {
 
     .about-me {
         padding-top: 60px;
-        height: 600px;
+        padding-bottom: 60px;
     }
 
     .bruh {
         border-right: 1px solid lightgray;
-    }
-
-    .hero-section {
-        background-image: url(https://images-assets.nasa.gov/image/as11-44-6551/as11-44-6551~orig.jpg);
-        color: white;
-        height: 550px;
-        padding-top: 12%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
     }
 }

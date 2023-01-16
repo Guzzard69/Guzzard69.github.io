@@ -43,7 +43,7 @@ const getPokemon = () => {
     request.send();
 
     //shows loading gif and clears submission box
-    document.querySelector('#loading').src = './spinner.gif';
+    //document.querySelector('#loading').src = './spinner.gif';
     document.querySelector('#pokemonBox').value = '';
 
     request.onload = () => {
@@ -54,7 +54,7 @@ const getPokemon = () => {
         let name = data.species.name;
         let upperName = name[0].toUpperCase() + name.slice(1)
         pokemonName = upperName.replace('-', ' ');
-        document.querySelector('#loading').src = '';
+        //document.querySelector('#loading').src = '';
 
         hasScored = false;
     }
